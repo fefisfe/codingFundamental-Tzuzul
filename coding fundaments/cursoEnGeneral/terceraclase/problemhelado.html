@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Topping disponibles: oreo, KitKat, brownie, lacasitos")
+
+        var topping = prompt ("Selecciona el topping que quiere con su helado").toLowerCase()
+
+        var precio = 1.90
+
+        if (topping === "oreo"){
+             precio += 1
+             alert("Usted eligio oreo, el total a pagar es" +" "+ precio)
+        }
+        else if(topping === "KitKat"){
+            precio += 1.75
+            alert("El precio total es de" +" "+ precio)
+        }
+        else if(topping === "brownie"){
+            precio += 0.75
+            alert("El total es de" +" "+ precio)
+        }
+        else if(topping === "lacasitos"){
+            precio += 0.95
+            alert("Total a pagar" +" "+ $ + precio.toFixed(2))
+        }
+        else{
+            alert("Lo siento, no tenemos ese topping")
+        }
+        console.log(precio)
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Topping disponibles: oreo, KitKat, brownie, lacasitos")
+
+        var topping = prompt ("Selecciona el topping que quiere con su helado")
+
+        var precio = 1.90
+        switch(toppingUsuario){
+            case "oreo":
+                precio += 1
+                break
+            case "KitKat":
+                precio += 1.75
+                break
+            case "broenie":
+                precio += 0.75
+                break
+            case "lacasitos":
+                precio += 0.95
+                break
+            default:
+                console.log("Usted no ingresó ningún toppin correcto") 
+        }
+        console.log("El precio total es : $" + precio.toFixed(2))
+</body>
+</html>
